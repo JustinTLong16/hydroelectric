@@ -1,0 +1,27 @@
+/*Base Styles*/
+header{
+    text-align: center;
+    font-family: 'Times New Roman'; 
+    background-image: url(assets/banner.png);
+    background-size: 100% 100%; /*stretch the image to 100% of the tag*/
+    color: white;
+    font-size: 120%;
+    height: auto;
+    width: 100%;
+}
+body{
+    background-color: #fff;
+}
+
+
+/*Classes*/
+.wrapped{
+    margin-left: auto;
+    margin-right:auto;
+    height: 100%;
+    width:80%;
+    background-color: aquamarine;
+}
+
+
+/*ID's*/
