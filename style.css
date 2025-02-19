@@ -3,16 +3,91 @@ header{
     text-align: center;
     font-family: 'Times New Roman'; 
     background-image: url(assets/banner.png);
-    background-size: 100% 100%; /*stretch the image to 100% of the tag*/
-    color: white;
-    font-size: 120%;
-    height: auto;
-    width: 100%;
+    background-size: 150% 150%; /*stretch the image to 100% of the tag*/
+    color: black;
+    font-size: 300%;
+    margin-bottom: 0;
 }
-body{
-    background-color: #fff;
+nav{
+    position: fixed; /*no moving when flexing*/
+    top:0;
+    left: 0;
+    text-align: right;
+    padding-right: 0;
+    width: 100%;
+    background-color: aliceblue;
+    margin: 0;
+    z-index: 9999; /*this will make sure it is ALWAYS on top*/
+}
+nav a{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+nav ul{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end; 
+    margin: 0;
+    font-size: .8em;
+    list-style-type: none;
+}
+nav li{
+    width: 7em;
+    padding: 0 1em 0 1em; /*top, right, bottom, left*/
+    display: inline;
+}
+/*event handler styling - interact with tag, something happens*/
+nav a:link{color:blue}
+nav a:visited{color: blue}
+nav a:hover{color: #A26100;border:3px inset #333333;}
+
+h2{
+    text-align: center;
+    font-size:1.5em;
+    font-style: italic, bold;
 }
 
+body{
+    background-color: #000655;
+
+}
+
+p{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.3em;
+}
+
+hr{
+    border: 2px;
+}
+
+
+
+th{
+    border: 2px solid blue;
+    padding: 5px;
+    background-color: skyblue;
+    text-align: center;
+    font-size: 2em;
+    font-style: italic;
+}
+td{
+    border: 2px solid blue;
+    padding: 5px;
+    text-align: center;
+    background-color: skyblue;
+    font-size: 1.5em;
+}
+ul, li{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1.2em;
+}
+b,i{
+    text-decoration: underline wavy;
+}
 
 /*Classes*/
 .wrapped{
@@ -21,7 +96,11 @@ body{
     height: 100%;
     width:80%;
     background-color: aquamarine;
+    padding-bottom: 1%;
 }
-
+.center{
+    margin-right: 50%;
+    margin-left: 25%;
+}
 
 /*ID's*/
