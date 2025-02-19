@@ -49,6 +49,9 @@ a:link{color:black}
 a:visited{color: black}
 a:hover{color: black}
 
+main{
+    background-color: aquamarine;
+}
 h2{
     text-align: center;
     font-size:1.5em;
