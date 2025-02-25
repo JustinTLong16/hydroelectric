@@ -110,6 +110,12 @@
             width:560;
             height:315;
         }
+        footer{
+            background-color: blue;
+            margin-top: 0%;
+            text-align: center;
+            color: aquamarine;
+        }
 
         /*Classes*/
         .wrapped{
@@ -119,7 +125,7 @@
             height: 100%;
             width:80%;
             background-color: aquamarine;
-            padding-bottom: 1%;
+            padding-bottom: 1em;
         }
         .center{
             margin-right: 25%;
@@ -241,7 +247,12 @@
             width:460;
             height:215;
         }
-    
+        footer{
+            background-color: blue;
+            margin-top: 0%;
+            text-align: center;
+            color: aquamarine;
+        }
         /*Classes*/
         .wrapped{
             margin-top: 0;
@@ -375,6 +386,12 @@
         width:260;
         height:115;
     }
+    footer{
+        background-color: blue;
+        margin-top: 0%;
+        text-align: center;
+        color: aquamarine;
+    }
     /*Classes*/
     .wrapped{
         margin-top: 0;
@@ -389,8 +406,6 @@
         margin-right: 5%;
         margin-left: 5%;
     }
-
     /*ID's*/
     *{box-sizing: border-box;}
-
     }
