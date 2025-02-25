@@ -1,120 +1,396 @@
-/*Base Styles*/
-header{
-    text-align: center;
-    font-family: 'Times New Roman'; 
-    background-image: url(assets/banner.png);
-    background-size: 150% 150%; /*stretch the image to 100% of the tag*/
-    color: black;
-    font-size: 300%;
-    margin-bottom: 0;
-}
-header a{
-    color: black;
-    text-decoration: none;
-}
-nav{
-    position: fixed; /*no moving when flexing*/
-    top:0;
-    left: 0;
-    text-align: right;
-    padding-right: 0;
-    width: 100%;
-    background-color: aliceblue;
-    margin: 0;
-    z-index: 9999; /*this will make sure it is ALWAYS on top*/
-}
-nav a{
-    text-align: center;
-    text-decoration: none;
-    display: block;
-}
-nav ul{
-    display: inline-flex;
-    flex-wrap: nowrap;
-    justify-content: flex-end; 
-    margin: 0%;
-    font-size: .8em;
-    list-style-type: none;
-}
-nav li{
-    width: 7em;
-    padding: 0 1em 0 1em; /*top, right, bottom, left*/
-    display: inline;
-}
-/*event handler styling - interact with tag, something happens*/
-nav a:link{color:blue}
-nav a:visited{color: blue}
-nav a:hover{color: #A26100;border:3px inset #333333;}
-a:link{color:black}
-a:visited{color: black}
-a:hover{color: black}
+/*DESKTOP MODE*/
+@media(min-width:1024px){
+ /*Base Styles*/
+        header{
+            text-align: center;
+            font-family: 'Times New Roman'; 
+            background-image: url(assets/banner.png);
+            background-size: 150% 150%; /*stretch the image to 100% of the tag*/
+            color: black;
+            font-size: 300%;
+            margin-bottom: 0;
+        }
+        header a{
+            color: black;
+            text-decoration: none;
+        }
+        nav{
+            position: fixed; /*no moving when flexing*/
+            top:0;
+            left: 0;
+            text-align: right;
+            padding-right: 0;
+            width: 100%;
+            background-color: aliceblue;
+            margin: 0;
+            z-index: 9999; /*this will make sure it is ALWAYS on top*/
+        }
+        nav a{
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+        nav ul{
+            display: inline-flex;
+            flex-wrap: nowrap;
+            justify-content: flex-end; 
+            margin: 0%;
+            font-size: .8em;
+            list-style-type: none;
+        }
+        nav li{
+            width: 7em;
+            padding: 0 1em 0 1em; /*top, right, bottom, left*/
+            display: inline;
+        }
+        /*event handler styling - interact with tag, something happens*/
+        nav a:link{color:blue}
+        nav a:visited{color: blue}
+        nav a:hover{color: #A26100;border:3px inset #333333;}
+        a:link{color:black}
+        a:visited{color: black}
+        a:hover{color: black}
 
-main{
-    background-color: aquamarine;
-}
-h2{
-    text-align: center;
-    font-size:1.5em;
-    font-style: italic, bold;
-}
+        main{
+            background-color: aquamarine;
+        }
+        h2{
+            text-align: center;
+            font-size:1.7em;
+            font-style: italic, bold;
+        }
 
-body{
-    background-color: #000655;
+        body{
+            background-color: #000655;
 
-}
+        }
 
-p{
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: 1.3em;
-}
+        p{
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 1.3em;
+        }
+        img{
+            margin-left:30%; 
+            margin-right: 30%;
+            height:350px; 
+            width:600px;
+        }
 
-hr{
-    border: 2px;
-}
-
-
-
-th{
-    border: 2px solid blue;
-    padding: 5px;
-    background-color: skyblue;
-    text-align: center;
-    font-size: 2em;
-    font-style: italic;
-}
-td{
-    border: 2px solid blue;
-    padding: 5px;
-    text-align: center;
-    background-color: skyblue;
-    font-size: 1.5em;
-}
-ul, li{
-    margin-left: 20%;
-    margin-right: 20%;
-    font-size: 1.2em;
-}
-b,i{
-    text-decoration: underline wavy;
-}
-
-/*Classes*/
-.wrapped{
-    margin-left: auto;
-    margin-right:auto;
-    height: 100%;
-    width:80%;
-    background-color: aquamarine;
-    padding-bottom: 1%;
-}
-.center{
-    margin-right: 50%;
-    margin-left: 25%;
-}
-
-/*ID's*/
+        hr{
+            border: 2px;
+        }
 
 
 
-*{box-sizing: border-box;}
+        th{
+            border: 2px solid blue;
+            padding: 5px;
+            background-color: skyblue;
+            text-align: center;
+            font-size: 2em;
+            font-style: italic;
+        }
+        td{
+            border: 2px solid blue;
+            padding: 5px;
+            text-align: center;
+            background-color: skyblue;
+            font-size: 1.5em;
+        }
+        ul, li{
+            margin-left: 20%;
+            margin-right: 20%;
+            font-size: 1.2em;
+        }
+        b,i{
+            text-decoration: underline wavy;
+        }
+        iframe{
+            width:560;
+            height:315;
+        }
+
+        /*Classes*/
+        .wrapped{
+            margin-top: 0;
+            margin-left: auto;
+            margin-right:auto;
+            height: 100%;
+            width:80%;
+            background-color: aquamarine;
+            padding-bottom: 1%;
+        }
+        .center{
+            margin-right: 25%;
+            margin-left: 25%;
+        }
+
+        /*ID's*/
+        *{box-sizing: border-box;}
+    }
+
+
+@media(max-width:1024px) and (min-width:600px){
+        header{
+            text-align: center;
+            font-family: 'Times New Roman'; 
+            background-image: url(assets/banner.png);
+            background-size: 150% 150%; /*stretch the image to 100% of the tag*/
+            color: black;
+            font-size: 200%;
+            margin-bottom: 0;
+        }
+        header a{
+            color: black;
+            text-decoration: none;
+        }
+        nav{
+            position: fixed; /*no moving when flexing*/
+            top:0;
+            left: 0;
+            text-align: right;
+            padding-right: 0;
+            width: 100%;
+            background-color: aliceblue;
+            margin: 0;
+            z-index: 9999; /*this will make sure it is ALWAYS on top*/
+        }
+        nav a{
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+        nav ul{
+            display: inline-flex;
+            flex-wrap: nowrap;
+            justify-content: flex-end; 
+            margin: 0%;
+            font-size: .6em;
+            list-style-type: none;
+        }
+        nav li{
+            width: 7em;
+            padding: 0 1em 0 1em; /*top, right, bottom, left*/
+            display: inline;
+        }
+        /*event handler styling - interact with tag, something happens*/
+        nav a:link{color:blue}
+        nav a:visited{color: blue}
+        nav a:hover{color: #A26100;border:3px inset #333333;}
+        a:link{color:black}
+        a:visited{color: black}
+        a:hover{color: black}
+    
+        main{
+            background-color: aquamarine;
+        }
+        h2{
+            text-align: center;
+            font-size:1.7em;
+            font-style: italic, bold;
+        }
+    
+        body{
+            background-color: #000655;
+    
+        }
+    
+        p{
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 1.2em;
+        }
+        img{
+            margin-left:20%; 
+            margin-right: 10%;
+            height:250px; 
+            width:500px;
+        }
+    
+        hr{
+            border: 2px;
+        }
+    
+    
+    
+        th{
+            border: 2px solid blue;
+            padding: 5px;
+            background-color: skyblue;
+            text-align: center;
+            font-size: 1.7em;
+            font-style: italic;
+        }
+        td{
+            border: 2px solid blue;
+            padding: 5px;
+            text-align: center;
+            background-color: skyblue;
+            font-size: 1em;
+        }
+        ul, li{
+            margin-left: 20%;
+            margin-right: 20%;
+            font-size: 1em;
+        }
+        b,i{
+            text-decoration: underline wavy;
+        }
+        iframe{
+            width:460;
+            height:215;
+        }
+    
+        /*Classes*/
+        .wrapped{
+            margin-top: 0;
+            margin-left: auto;
+            margin-right:auto;
+            height: 100%;
+            width:80%;
+            background-color: aquamarine;
+            padding-bottom: 1%;
+        }
+        .center{
+            margin-right: 25%;
+            margin-left: 25%;
+        }
+    
+        /*ID's*/
+        *{box-sizing: border-box;}
+    
+
+
+    }
+
+
+
+
+/*MOBILE MODE*/
+@media(max-width:600px){
+    header{
+        text-align: center;
+        font-family: 'Times New Roman'; 
+        background-image: url(assets/banner.png);
+        background-size: 150% 150%; /*stretch the image to 100% of the tag*/
+        color: black;
+        font-size: 100%;
+        margin-bottom: 0;
+    }
+    header a{
+        color: black;
+        text-decoration: none;
+    }
+    nav{
+        position: fixed; /*no moving when flexing*/
+        top:0;
+        left: 0;
+        text-align: right;
+        padding-right: 0;
+        width: 100%;
+        background-color: aliceblue;
+        margin: 0;
+        z-index: 9999; /*this will make sure it is ALWAYS on top*/
+    }
+    nav a{
+        text-align: center;
+        text-decoration: none;
+        display: block;
+    }
+    nav ul{
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end; 
+        margin: 0%;
+        font-size: .5em;
+        list-style-type: none;
+    }
+    nav li{
+        width: 7em;
+        padding: 0 1em 0 1em; /*top, right, bottom, left*/
+        display: inline;
+    }
+    /*event handler styling - interact with tag, something happens*/
+    nav a:link{color:blue}
+    nav a:visited{color: blue}
+    nav a:hover{color: #A26100;border:3px inset #333333;}
+    a:link{color:black}
+    a:visited{color: black}
+    a:hover{color: black}
+
+    main{
+        background-color: aquamarine;
+    }
+    h2{
+        text-align: center;
+        font-size:1.7em;
+        font-style: italic, bold;
+    }
+
+    body{
+        background-color: #000655;
+
+    }
+
+    p{
+        /* margin-left: 10%;
+        margin-right: 10%; */
+        font-size: 1.3em;
+    }
+    img{
+        margin-left:5%;
+        margin-right: 5%;
+        height:200px; 
+        width:400px;
+    }
+
+    hr{
+        border: 2px;
+    }
+    th{
+        border: 2px solid blue;
+        padding: 5px;
+        background-color: skyblue;
+        text-align: center;
+        font-size: 2em;
+        font-style: italic;
+    }
+    td{
+        border: 2px solid blue;
+        padding: 5px;
+        text-align: center;
+        background-color: skyblue;
+        font-size: 1.5em;
+    }
+    ul, li{
+        /* margin-left: 20%;
+        margin-right: 20%; */
+        font-size: 1.2em;
+    }
+    b,i{
+        text-decoration: underline wavy;
+    }
+    iframe{
+        width:260;
+        height:115;
+    }
+    /*Classes*/
+    .wrapped{
+        margin-top: 0;
+        margin-left: auto;
+        margin-right:auto;
+        height: 100%;
+        width:100%;
+        background-color: aquamarine;
+        padding-bottom: 1%;
+    }
+    .center{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    /*ID's*/
+    *{box-sizing: border-box;}
+
+    }
